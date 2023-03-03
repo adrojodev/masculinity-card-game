@@ -3,7 +3,7 @@ import Image from "next/image";
 import Icon from "react-material-symbols/rounded";
 
 interface NavbarProps {
-  page: string;
+  page?: string;
 }
 
 export const Navbar = ({ page }: NavbarProps) => {
