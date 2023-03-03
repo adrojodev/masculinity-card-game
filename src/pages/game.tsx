@@ -62,8 +62,11 @@ export default function Game() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className="w-screen h-screen flex flex-col justify-between items-center pb-8"
-        style={{ backgroundColor: "#DF7E69" }}
+        style={{
+          backgroundColor: "#DF7E69",
+          maxHeight: "-webkit-fill-available",
+        }}
+        className="w-screen h-screen flex flex-col justify-center items-center pb-8"
       >
         <nav className="flex justify-end items-end px-4 pt-4 w-full">
           <Link href="/">
@@ -72,28 +75,23 @@ export default function Game() {
             </button>
           </Link>
         </nav>
-        <div className="flex flex-col w-full gap-2 items-center justify-center">
+        <div className="flex flex-col w-full h-full gap-2 items-center justify-center">
           {gameStatus !== "started" ? (
-            <Card />
+            <Card onClick={iniciarJuego} />
           ) : (
-            <Card level={currentLevel} question={currentQuestion} />
+            <Card
+              onClick={() => setRandomCard(getRandomCard()!)}
+              level={currentLevel}
+              question={currentQuestion}
+            />
           )}
         </div>
-        {gameStatus == "not started" ? (
-          <Button onClick={() => iniciarJuego()} variant="inverted">
-            Empezar
-          </Button>
-        ) : gameStatus == "started" ? (
-          <Button
-            onClick={() => setRandomCard(getRandomCard()!)}
-            variant="inverted"
-          >
-            Sacar otra tarjeta
-          </Button>
-        ) : (
+        {gameStatus === "finished" ? (
           <Link href="/">
             <Button variant="inverted">Terminar</Button>
           </Link>
+        ) : (
+          <></>
         )}
       </main>
     </>

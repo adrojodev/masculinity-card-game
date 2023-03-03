@@ -6,11 +6,13 @@ import { Text } from "../Text";
 interface CardProps {
   level?: 1 | 2 | 3;
   question?: string;
+  onClick?: () => void;
 }
 
-export const Card = ({ level, question }: CardProps) => {
+export const Card = ({ level, question, onClick }: CardProps) => {
   return (
     <div
+      onClick={onClick}
       className="bg-white w-3/4 h-96 rounded-2xl px-4 py-4"
       style={{
         background: level
