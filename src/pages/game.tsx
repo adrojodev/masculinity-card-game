@@ -30,6 +30,11 @@ export default function Game() {
       setCurrentLevel(3);
       setCurrentQuestions(Questions.Questions.deck3);
     }
+
+    return () => {
+      setCurrentLevel([]);
+      setCurrentQuestions([]);
+    };
   });
 
   function iniciarJuego() {
@@ -62,11 +67,11 @@ export default function Game() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
+        className="w-screen h-screen flex flex-col justify-center items-center pb-8"
         style={{
           backgroundColor: "#DF7E69",
           maxHeight: "-webkit-fill-available",
         }}
-        className="w-screen h-screen flex flex-col justify-center items-center pb-8"
       >
         <nav className="flex justify-end items-end px-4 pt-4 w-full">
           <Link href="/">
@@ -88,7 +93,7 @@ export default function Game() {
         </div>
         {gameStatus === "finished" ? (
           <Link href="/">
-            <Button variant="inverted">Terminar</Button>
+            <Button variant="inverted">Salir</Button>
           </Link>
         ) : (
           <></>
