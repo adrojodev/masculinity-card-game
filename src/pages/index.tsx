@@ -18,34 +18,37 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar page="home" />
-      <div className="px-4">
-        <Image
-          src="/images/portada.png"
-          alt="A man getting out of a box with a question mark in it"
-          width={100}
-          height={100}
-          layout="responsive"
-        />
-        <div
-          className="flex flex-col gap-6 items-start
+      <main className="pb-8">
+        <Navbar page="home" />
+        <div className="px-4">
+          <Image
+            className="mt-8"
+            src="/images/portada.png"
+            alt="A man getting out of a box with a question mark in it"
+            width={100}
+            height={100}
+            layout="responsive"
+          />
+          <div
+            className="flex flex-col gap-6 items-start
         "
-        >
-          <div className="flex flex-col gap-2 px-2">
-            <Text as="header">La caja de preguntas</Text>
-            <Text as="paragraph">
-              A continuación encontrarás una serie de preguntas que al
-              hacérnoslas pueden ayudarnos a cuestionarnos qué significa ser un
-              hombre hoy en día y cómo podemos
-            </Text>
+          >
+            <div className="flex flex-col gap-2 px-2">
+              <Text as="header">La caja de preguntas</Text>
+              <Text as="paragraph">
+                A continuación encontrarás una serie de preguntas que al
+                hacérnoslas pueden ayudarnos a cuestionarnos qué significa ser
+                un hombre hoy en día y cómo podemos
+              </Text>
+            </div>
+            <Link href="/deck">
+              <Button className="ml-2" variant="default">
+                Continuar
+              </Button>
+            </Link>
           </div>
-          <Link href="/deck">
-            <Button className="ml-2" variant="default">
-              Continuar
-            </Button>
-          </Link>
         </div>
-      </div>
+      </main>
     </>
   );
 }

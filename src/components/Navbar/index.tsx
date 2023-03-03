@@ -8,7 +8,7 @@ interface NavbarProps {
 
 export const Navbar = ({ page }: NavbarProps) => {
   return (
-    <nav className="flex justify-between pr-5">
+    <nav className="flex justify-between pr-5 bg-white fixed w-full top-0">
       <Image
         src={"/images/logo.png"}
         alt="Unshaping masculinity logo"
