@@ -22,7 +22,6 @@ export default function Home() {
         <Navbar page="home" />
         <div className="px-4">
           <Image
-            className="mt-8"
             src="/images/portada.png"
             alt="A man getting out of a box with a question mark in it"
             width={100}

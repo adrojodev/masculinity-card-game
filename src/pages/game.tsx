@@ -82,7 +82,13 @@ export default function Game() {
         </nav>
         <div className="flex flex-col w-full h-full gap-2 items-center justify-center">
           {gameStatus !== "started" ? (
-            <Card onClick={iniciarJuego} />
+            <Card
+              onClick={() => {
+                if (gameStatus !== "finished") {
+                  iniciarJuego();
+                }
+              }}
+            />
           ) : (
             <Card
               onClick={() => setRandomCard(getRandomCard()!)}
