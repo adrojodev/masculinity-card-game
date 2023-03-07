@@ -29,12 +29,14 @@ export default function Home() {
             layout="responsive"
           />
           <div
-            className="flex flex-col gap-6 items-start
+            className="flex flex-col gap-6 items-center
         "
           >
             <div className="flex flex-col gap-2 px-2">
-              <Text as="header">La caja de preguntas</Text>
-              <Text as="paragraph">
+              <Text as="header" className="text-center">
+                La caja de preguntas
+              </Text>
+              <Text as="paragraph" className="text-center">
                 A continuación encontrarás una serie de preguntas que al
                 hacérnoslas pueden ayudarnos a cuestionarnos qué significa ser
                 un hombre hoy en día y cómo podemos

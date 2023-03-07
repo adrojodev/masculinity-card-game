@@ -35,7 +35,7 @@ export default function Agradecimientos() {
               height={136}
             />
             <Text as="subheader" className="text-gray-400 text-center">
-              Desarrollo de producto
+              Desarrollo de proyecto
             </Text>
           </div>
           <div className="flex flex-col items-center justify-center">
@@ -66,7 +66,7 @@ export default function Agradecimientos() {
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image
-              src="/images/logo.png"
+              src="/images/ledieguex.png"
               alt="Agradecimientos"
               width={136}
               height={136}
