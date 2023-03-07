@@ -46,7 +46,9 @@ export default function Home() {
             className="flex flex-row"
           >
             <Icon icon="eco" size={24} />
-            <Text as="paragraph">Nunca me he cuestionado el "ser hombre"</Text>
+            <Text as="paragraph">
+              Nunca me he cuestionado el &quot;ser hombre&quot;
+            </Text>
           </Radio>
           <Radio
             selected={selected}

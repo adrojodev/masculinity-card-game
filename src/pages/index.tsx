@@ -37,8 +37,8 @@ export default function Home() {
                 La caja de preguntas
               </Text>
               <Text as="paragraph" className="text-center">
-                Las Cajas de Preguntas La "man box" o caja de hombres es una
-                construcción cultural que impone una serie de normas y
+                Las Cajas de Preguntas La &quot;man box&quot; o caja de hombres
+                es una construcción cultural que impone una serie de normas y
                 expectativas sobre cómo deben comportarse los hombres. Estas
                 normas suelen incluir la idea de que los hombres deben ser
                 fuertes, dominantes y no mostrar emociones o vulnerabilidad.
