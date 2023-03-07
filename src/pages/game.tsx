@@ -67,7 +67,7 @@ export default function Game() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className="w-screen h-screen flex flex-col justify-center items-center pb-8"
+        className="w-screen bg-gray-100 h-screen flex flex-col justify-center items-center pb-8"
         style={{
           maxHeight: "-webkit-fill-available",
         }}

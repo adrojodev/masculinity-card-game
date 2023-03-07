@@ -13,7 +13,7 @@ export const Card = ({ level, question, onClick }: CardProps) => {
   return (
     <div
       onClick={onClick}
-      className="bg-white w-3/4 h-96 rounded-2xl px-4 py-4"
+      className="bg-white shadow-lg w-3/4 h-96 rounded-2xl px-4 py-4"
       style={{
         background: level
           ? "#ffffff"
