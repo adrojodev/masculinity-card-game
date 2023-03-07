@@ -32,9 +32,11 @@ export default function Game() {
       setCurrentQuestions(Questions.Questions.deck3);
     }
 
+    //Clean up useEffect hook
     return () => {
       setCurrentLevel([]);
       setCurrentQuestions([]);
+      setCurrentQuestion([]);
     };
   });
 
