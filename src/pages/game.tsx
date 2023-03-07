@@ -69,7 +69,6 @@ export default function Game() {
       <main
         className="w-screen h-screen flex flex-col justify-center items-center pb-8"
         style={{
-          backgroundColor: "#CBADA7",
           maxHeight: "-webkit-fill-available",
         }}
       >
