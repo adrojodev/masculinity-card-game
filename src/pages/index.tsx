@@ -34,14 +34,14 @@ export default function Home() {
           >
             <div className="flex flex-col gap-2 px-2">
               <Text as="header" className="text-center">
-                La caja de preguntas
+                La Caja de preguntas
               </Text>
               <Text as="paragraph" className="text-center">
-                Las Cajas de Preguntas La &quot;man box&quot; o caja de hombres
-                es una construcción cultural que impone una serie de normas y
-                expectativas sobre cómo deben comportarse los hombres. Estas
-                normas suelen incluir la idea de que los hombres deben ser
-                fuertes, dominantes y no mostrar emociones o vulnerabilidad.
+                La &quot;man box&quot; o caja de hombres es una construcción
+                cultural que impone una serie de normas y expectativas sobre
+                cómo deben comportarse los hombres. Estas normas suelen incluir
+                la idea de que los hombres deben ser fuertes, dominantes y no
+                mostrar emociones o vulnerabilidad.
                 <br></br>
                 <br></br>Esta caja de hombres limita la expresión y el
                 desarrollo personal de los hombres, y también puede conducir a

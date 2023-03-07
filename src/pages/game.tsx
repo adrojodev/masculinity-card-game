@@ -36,7 +36,6 @@ export default function Game() {
     return () => {
       setCurrentLevel([]);
       setCurrentQuestions([]);
-      setCurrentQuestion([]);
     };
   });
 
@@ -103,17 +102,15 @@ export default function Game() {
           )}
         </div>
         {gameStatus === "finished" ? (
-          <Link href="/">
-            <Button onClick={() => (location.href = "/deck")} variant="default">
-              Salir
-            </Button>
+          <Link href="/deck">
+            <Button variant="default">Salir</Button>
           </Link>
         ) : gameStatus === "not started" ? (
           <Button onClick={iniciarJuego} variant="default">
             Iniciar
           </Button>
         ) : (
-          <Button onClick={getRandomCard} variant="outlined">
+          <Button onClick={() => getRandomCard()} variant="outlined">
             Sacar otra tarjeta
           </Button>
         )}

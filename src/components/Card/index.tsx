@@ -35,7 +35,7 @@ export const Card = ({ level, question, onClick }: CardProps) => {
           />
           <Text as="subheader">Deck {level}</Text>
         </div>
-        <Text className="text-center px-4" as="paragraph">
+        <Text className="text-center px-4 text-black" as="paragraph">
           {question}
         </Text>
         <Image
