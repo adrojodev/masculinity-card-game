@@ -29,7 +29,7 @@ export default function Home() {
             layout="responsive"
           />
           <div
-            className="flex flex-col gap-6 items-center
+            className="flex flex-col gap-6 items-center -mt-10
         "
           >
             <div className="flex flex-col gap-2 px-2">
@@ -37,9 +37,23 @@ export default function Home() {
                 La caja de preguntas
               </Text>
               <Text as="paragraph" className="text-center">
-                A continuación encontrarás una serie de preguntas que al
-                hacérnoslas pueden ayudarnos a cuestionarnos qué significa ser
-                un hombre hoy en día y cómo podemos
+                Las Cajas de Preguntas La "man box" o caja de hombres es una
+                construcción cultural que impone una serie de normas y
+                expectativas sobre cómo deben comportarse los hombres. Estas
+                normas suelen incluir la idea de que los hombres deben ser
+                fuertes, dominantes y no mostrar emociones o vulnerabilidad.
+                <br></br>
+                <br></br>Esta caja de hombres limita la expresión y el
+                desarrollo personal de los hombres, y también puede conducir a
+                la violencia de género.
+                <br></br>
+                <br></br>A continuación nos proponemos cuestionar la
+                masculinidad hegemónica y reflexionar sobre cómo podemos
+                deshacernos de las cajas que encierran un único modelo de
+                masculinidad, así intentar crear una sociedad más justa e
+                igualitaria.
+                <br></br>
+                <br></br>Da clic en continuar para ver las preguntas.
               </Text>
             </div>
             <Link href="/deck">

@@ -45,6 +45,20 @@ export default function Agradecimientos() {
             <Button variant="default">Formulario</Button>
           </Link>
         </div>
+        <div className="flex flex-col gap-8 px-4 items-center">
+          <div className="flex flex-col gap-4 mt-10">
+            <Text as="paragraph" className="text-center">
+              ¿Quisieras ayuda psicológica profesional?
+            </Text>
+            <Link
+              href="mailto:hi@ledieguex.com"
+              style={{ color: "rgb(8, 152, 153)" }}
+              className="bold text-center"
+            >
+              hi@ledieguex.com
+            </Link>
+          </div>
+        </div>
       </main>
     </>
   );

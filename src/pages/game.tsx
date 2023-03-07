@@ -8,6 +8,7 @@ import Questions from "./api/data/questions.json";
 
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
+import { Text } from "@/components/Text";
 
 export default function Game() {
   const [currentLevel, setCurrentLevel] = useState<any>([]);
@@ -72,8 +73,17 @@ export default function Game() {
           maxHeight: "-webkit-fill-available",
         }}
       >
-        <nav className="flex justify-end items-end px-4 pt-4 w-full">
-          <Link href="/">
+        <nav className="flex justify-between items-end px-4 pt-4 w-full">
+          <div>
+            <Text as="subheader" className="text-black text-left w-full">
+              {currentLevel === 1
+                ? "Ser un hombre"
+                : currentLevel === 2
+                ? "Cómo vivo mi masculinidad"
+                : "Equidad y violencia de género"}
+            </Text>
+          </div>
+          <Link href="/deck">
             <button className="bg-white flex items-center justify-center rounded-full px-1 py-1 bg-opacity-75">
               <Icon icon="close" size={24} />
             </button>
@@ -81,13 +91,7 @@ export default function Game() {
         </nav>
         <div className="flex flex-col w-full h-full gap-2 items-center justify-center">
           {gameStatus !== "started" ? (
-            <Card
-              onClick={() => {
-                if (gameStatus !== "finished") {
-                  iniciarJuego();
-                }
-              }}
-            />
+            <Card />
           ) : (
             <Card
               onClick={() => setRandomCard(getRandomCard()!)}
@@ -98,10 +102,18 @@ export default function Game() {
         </div>
         {gameStatus === "finished" ? (
           <Link href="/">
-            <Button variant="inverted">Salir</Button>
+            <Button onClick={() => (location.href = "/deck")} variant="default">
+              Salir
+            </Button>
           </Link>
+        ) : gameStatus === "not started" ? (
+          <Button onClick={iniciarJuego} variant="default">
+            Iniciar
+          </Button>
         ) : (
-          <></>
+          <Button onClick={getRandomCard} variant="outlined">
+            Sacar otra tarjeta
+          </Button>
         )}
       </main>
     </>

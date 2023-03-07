@@ -31,11 +31,10 @@ export default function Home() {
       <main className="flex flex-col items-center gap-10 px-2">
         <BackNavBar />
         <div className="flex flex-col px-4 gap-2">
-          <Text as="header">La caja de preguntas</Text>
+          <Text as="header">Las cajas de preguntas</Text>
           <Text as="paragraph">
-            Para elegir el mejor set de preguntas para esta ocasión quisiéramos
-            que eligieras la opción con la que te sientes más cercano acerca de
-            tu masculinidad.
+            Para elegir la caja de preguntas que vamos a abrir quisiéramos que
+            elijas la opción con la que te sientes más cercano:
           </Text>
         </div>
         <div className="flex flex-col gap-2 items-stretch w-full px-4">
@@ -47,7 +46,7 @@ export default function Home() {
             className="flex flex-row"
           >
             <Icon icon="eco" size={24} />
-            <Text as="paragraph">Nunca la he cuestionado</Text>
+            <Text as="paragraph">Nunca me he cuestionado el "ser hombre"</Text>
           </Radio>
           <Radio
             selected={selected}
@@ -57,7 +56,9 @@ export default function Home() {
             className="flex flex-row"
           >
             <Icon icon="spa" size={24} />
-            <Text as="paragraph">La he llegado a cuestionar</Text>
+            <Text as="paragraph">
+              Ocasionalmente me he cuestionado la masculinidad
+            </Text>
           </Radio>
           <Radio
             selected={selected}
@@ -67,7 +68,9 @@ export default function Home() {
             className="flex flex-row"
           >
             <Icon icon="filter_vintage" size={24} />
-            <Text as="paragraph">La suelo cuestionar amenudo</Text>
+            <Text as="paragraph">
+              Quisiera preguntarme más acerca de violencia de género
+            </Text>
           </Radio>
         </div>
         <Button

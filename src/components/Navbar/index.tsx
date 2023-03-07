@@ -25,23 +25,23 @@ export const Navbar = ({ page }: NavbarProps) => {
           />
         </Link>
         <Link
-          href="/agradecimientos"
+          href="/retroalimentacion"
           className="flex items-center justify-center"
         >
           <Icon
             icon="reviews"
             size={32}
-            color={page === "agradecimientos" ? "#DF7E69" : "black"}
+            color={page === "retroalimentacion" ? "#DF7E69" : "black"}
           />
         </Link>
         <Link
-          href="/retroalimentacion"
+          href="/agradecimientos"
           className="flex items-center justify-center"
         >
           <Icon
             icon="favorite"
             size={32}
-            color={page === "retroalimentacion" ? "#518CED" : "black"}
+            color={page === "agradecimientos" ? "#518CED" : "black"}
           />
         </Link>
       </div>

@@ -40,6 +40,10 @@ export const Button = ({
           variant === "default" || variant == "disabled"
             ? "#FFFFFF"
             : "#089899",
+        border:
+          variant === "outlined" || variant == "outlined-disabled"
+            ? "2px solid #089899"
+            : "none",
       }}
       {...props}
       onClick={onClick}
