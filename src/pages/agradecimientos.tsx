@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Text } from "@/components/Text";
 import { Navbar } from "@/components/Navbar";
@@ -50,20 +51,22 @@ export default function Agradecimientos() {
               Iniciativa
             </Text>
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <Image
-              src="/images/bubbles.png"
-              alt="Burbuja de colores, logo de ad_rojo"
-              width={136}
-              height={136}
-            />
-            <Text as="paragraph" className="text-gray-700 text-center">
-              ad_rojo
-            </Text>
-            <Text as="subheader" className="text-gray-400 text-center">
-              desarrollo web
-            </Text>
-          </div>
+          <Link href="https://adrojo.art" target="_blank">
+            <div className="flex flex-col items-center justify-center">
+              <Image
+                src="/images/bubbles.png"
+                alt="Burbuja de colores, logo de ad_rojo"
+                width={136}
+                height={136}
+              />
+              <Text as="paragraph" className="text-gray-700 text-center">
+                ad_rojo
+              </Text>
+              <Text as="subheader" className="text-gray-400 text-center">
+                desarrollo web
+              </Text>
+            </div>
+          </Link>
           <div className="flex flex-col items-center justify-center">
             <Image
               src="/images/ledieguex.png"
